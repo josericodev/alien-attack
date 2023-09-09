@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.game-container {
+  margin: 2em auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #ffcc00;
+  border-radius: 20px;
+  max-width: 600px; /* Establece un ancho máximo para tabletas y escritorio */
+}
+
+/* Estilos para el título "Alien Attack" */
+.game-title {
+  font-size: 36px;
+  color: #ffcc00;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Estilos para el icono de nave espacial */
+.game-title i {
+  font-size: 48px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Estilos para los controles */
+.controller {
+  margin-top: 20px;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para los botones cuando están en estado activo (clic) */
+.control-button:active,
+.action-button:active {
+  background-color: #eedc94; /* Cambia el color de fondo al hacer clic a uno más notorio */
+  transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Estilos generales para los botones */
+.control-button,
+.action-button {
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Estilos adicionales para los botones al pasar el mouse sobre ellos (hover) */
+.control-button:hover,
+.action-button:hover {
+  background-color: #eedc94; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Agrega estilos al texto "Destroyed" */
+.barra {
+  margin: 20px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Agrega estilos al texto "Level" */
+.level {
+  margin: 20px;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el canvas */
+#my_canvas {
+  width: 100%; /* Ocupa el ancho completo en dispositivos móviles */
+  max-width: 100%; /* Garantiza que el canvas no se desborde en dispositivos móviles */
+  height: auto; /* Ajusta la altura automáticamente */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Jose Antonio Rico">
+  <meta name="description" content="Juego de Alien Attack desarrollado por Jose Antonio Rico.">
+  <meta name="keywords" content="Alien Attack, juego, espacio, naves, diversión, entretenimiento">
+  <title>Alien Attack</title>
+  <link rel="icon" href="https://www.shareicon.net/data/2015/10/06/113360_game_512x512.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="game-title">Alien Attack</h1>
+    <canvas id="my_canvas" width="700" height="600"></canvas>
+    <div class="controller">
+      <div class="cross">
+        <button class="control-button" id="left_btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="action-button" id="fire_btn"><i class="fas fa-fire"></i></button>
+        <button class="control-button" id="right_btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="button-container">
+        <button class="action-button" id="reload_btn"><i class="fas fa-sync"></i></button>
+      </div>
+    </div>
+    <div class="barra">Destroyed: 0</div>
+    <div class="level">Level: 1</div>
+  <script src="app.js"></script>
+</body>
+</html>
